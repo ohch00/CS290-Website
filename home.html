@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wake and Bake</title>
+	<link rel="stylesheet" href="home.css">
+    <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+</head>
+<body>
+    <div class="navigation-bar">
+        <h1 style="text-align: center; color: #353d52;">Wake and Bake</h1>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </div>
+    <br>
+    <div class="slideshow" style="width: 75">
+    	<img src="1.jpg" class="slideshow-pic" style="width: 50%">
+    	<img src="2.jpeg" class="slideshow-pic" style="width: 50%">
+    	<img src="3.jpeg" class="slideshow-pic" style="width: 50%">
+        <a class="prev" onclick="plusSlides(-1)">←</a>
+        <a class="next" onclick="plusSlides(1)">→</a>  
+    </div>
+    <div class="restaurant-description">
+        <h2 style="text-align: center;">What is Wake and Bake?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Lectus proin nibh nisl condimentum id venenatis. Scelerisque varius morbi enim nunc faucibus a pellentesque sit. Posuere ac ut consequat semper viverra nam. Nisi porta lorem mollis aliquam. Commodo elit at imperdiet dui accumsan sit. Metus vulputate eu scelerisque felis imperdiet proin. Id volutpat lacus laoreet non curabitur gravida arcu. Eu lobortis elementum nibh tellus molestie nunc. Purus in massa tempor nec feugiat nisl. Sit amet facilisis magna etiam. Suscipit tellus mauris a diam maecenas sed enim ut.</p>
+        <img src="https://www.tasteofhome.com/wp-content/uploads/2020/02/heres-to-tonight-GettyImages-868935172.jpg">
+        <h6 style="text-align: right;">Image by PeopleImages/iStock/Getty Images Plus</h6>
+    </div>
+    <script>
+        /* script for slideshow is combined javascript from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_website_script combined */
+    var myIndex = 0;
+    slideshow()
+
+    function plusSlides(n){
+        setTimeout(slideshow, 5000)
+        slideshow(myIndex += n);
+    }
+
+    function currentSlide(n){
+        setTimeout(slideshow, 5000)
+        slideshow(myIndex = n);
+    }
+
+    function slideshow(n){
+		var i;
+		var x = document.getElementsByClassName("slideshow-pic");
+        if (n > x.length){myIndex = 1}
+        if (n < 1){myIndex = x.length}
+		for (i=0; i<x.length; i++){
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex=1}
+			x[myIndex-1].style.display='block';
+		setTimeout(slideshow, 5000);
+	}
+    </script>
+</body>
+</html>

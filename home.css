@@ -1,0 +1,69 @@
+.navigation-bar{
+    overflow: hidden;
+    background-color: #f5c567;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+.navigation-bar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 22%;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.navigation-bar a:hover{
+    background-color: #fefdff;
+    color: black;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Sen'; 
+    margin:0;
+    background-color: #fefdff;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: static;
+}
+
+.slideshow-pic{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: auto;
+  padding: 15px;
+}
+
+.next{
+  right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  width: auto;
+  padding: 15px;
+}
+
+.restaurant-description{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 150px;
+    color: #353d52;
+}

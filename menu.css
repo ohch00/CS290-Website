@@ -1,0 +1,58 @@
+.navigation-bar{
+	overflow: hidden;
+	background-color: #f5c567;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.navigation-bar a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	width: 22%;
+	text-decoration: none;
+	font-size: 15px;
+	opacity: 0.9;
+}
+
+.navigation-bar a:hover{
+	background-color: #fefdff;
+	color: black;
+}
+
+body{
+    background-image: url(https://wallpaperfx.com/view_image/perfect-breakfast-1920x1080-wallpaper-15011.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sen'; 
+    margin:0;
+}
+
+h1{
+	text-align: center;
+}
+
+h4{
+	text-align: center;
+}
+
+.menu-items{
+	opacity: 0.9;
+	background-color: #f5c567;
+}
+
+.menu-download{
+	opacity: 0.9;
+	background-color: #f5c567;
+	text-decoration: none;
+	text-align: center;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    color: white;
+}

@@ -1,0 +1,84 @@
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns*/
+
+*{
+	box-sizing: border-box;
+}
+
+.column{
+	float: left;
+	width: 50%;
+	padding: 5px;
+	text-align: center;
+	background-color: #f5c567;
+	color: #353d52;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hours{
+	overflow: auto;
+}
+
+.locations{
+	overflow: auto;
+}
+
+.history{
+	/*https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow*/
+	overflow: auto;
+	text-align: center;
+	height: 500px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f5c567;
+	color: #353d52;
+}
+
+body{
+	background-image: url(https://wallpaperfx.com/view_image/perfect-breakfast-1920x1080-wallpaper-15011.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sen'; 
+    margin:0;
+}
+
+.navigation-bar{
+	overflow: hidden;
+	background-color: #f5c567;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.navigation-bar a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	width: 22%;
+	text-decoration: none;
+	font-size: 15px;
+	opacity: 0.9;
+}
+
+.navigation-bar a:hover{
+	background-color: #fefdff;
+	color: black;
+}
+
+.body1{
+	opacity: 0.9;
+	background-color: #f5c567
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    color: white;
+}

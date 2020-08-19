@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-us.css">
+    <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+</head>
+<body>
+    <div class="navigation-bar">
+        <!-- navigation bar learned from https://www.w3schools.com/howto/howto_website.asp -->
+        <h1 style="text-align: center; color: #353d52;">Wake and Bake</h1>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </div>
+    <h1 style="text-align: center; color: #fefdff;">Contact Us</h1>
+    <br>
+    <div class="row">
+        <!-- columns and rows learned from https://www.w3schools.com/howto/howto_css_two_columns.asp -->
+        <div class="column">
+            <div class="contact-container">
+                <h3>Contact</h3>
+                <div style="text-align: center;">
+                    //form for contacting restaurant
+                    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post" style="text-align: center; font-size: 20px">
+                    <label> First Name:
+                        <br>
+                        <input type="text" name="first_name">
+                    </label>
+                    <br>
+                    <br>
+                    <label> Last Name:
+                        <br>
+                        <input type="text" name="last_name">
+                    </label>
+                    <br>
+                    <br>
+                    <label> How should we contact you?
+                        <br>
+                        <select name="contact">
+                            <option value="phone-number">Phone Number</option>
+                            <option value="email">Email Address</option>
+                            <option value="snail-mail">Mailing Address</option>
+                            <option value="social-media">Social Media</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label> Contact Info:
+                        <br>
+                        <input type="text" name="contact-info">
+                    </label>
+                    <br>
+                    <br>
+                    <label> Subject:
+                        <br>
+                        <textarea id="text-here" placeholder="Message here" style="height: 100px; width: 300px;"></textarea>
+                    </label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div class="column">
+        <div class="social-media">
+        <h3>Social Media</h3>
+        <p style="font-size: 20px;">We can also be found on:</p>
+        <p>
+            <!--outside links to social media-->
+            <ul style="font-size: 20px;">
+                <li><a href="https://www.yelp.com/">Yelp</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+            </ul>
+        </p>
+        <img src="https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2018/10/Terra-Jim-Brueckner.jpg" alt="Restaurant lunch" style="float: left; object-fit: cover; width: 120%; margin-left: auto; margin-right: auto; display: block;">
+        <h6 style="text-align: justify; margin-right: auto; margin-left: auto;">Photo by Jim Brueckner, https://www.bostonmagazine.com/restaurants/2019/03/18/ask-the-editor-graduation-lunch-ambiance/</h6>
+    </div>
+    </div>
+</div>
+<div class="footer">
+    <h6>Background image from https://wallpaperfx.com/other/miscellaneous/perfect-breakfast-wallpaper-15011.htm</h6>
+</div>
+</body>
+</html>
